@@ -1,10 +1,40 @@
 body {
   margin: 0px;
-  background-image: linear-gradient(to bottom right, #000000,#001a09,#003312);
+background: linear-gradient(138deg, #000000, #003312, #095624);
+background-size: 300% 300%;
+
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+-o-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+
+
+  
 	color: white !important;
 	font-family: 'Righteous', sans-serif;
 	text-align: center;
 	height: -webkit-fill-available;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
 }
 
 a {
@@ -23,12 +53,28 @@ a {
   margin: 10px;
 }
 
+h1, h2{
+	font-family: 'Lato', sans-serif;
 
+}
 
 h1{
-	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
-	font-size: 1em;
+	font-size: 4em;
+}
+
+g{
+	color: #5ff442;
+}
+
+h2{
+	
+	font-weight: 100;
+	font-size: 1.5em;
+}
+
+bold {
+	font-style: bold;
 }
 
 section {
