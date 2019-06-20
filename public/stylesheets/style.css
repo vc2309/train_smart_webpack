@@ -3,10 +3,10 @@ body {
 background: linear-gradient(138deg, #000000, #003312, #095624);
 background-size: 300% 300%;
 
--webkit-animation: AnimationName 30s ease infinite;
--moz-animation: AnimationName 30s ease infinite;
--o-animation: AnimationName 30s ease infinite;
-animation: AnimationName 30s ease infinite;
+-webkit-animation: AnimationName 10s ease infinite;
+-moz-animation: AnimationName 10s ease infinite;
+-o-animation: AnimationName 10s ease infinite;
+animation: AnimationName 10s ease infinite;
 
 
   
@@ -114,3 +114,8 @@ section {
   background-color: #4CAF50;
   color: white;
 }
+
+video {
+	width: 70%;
+}
+

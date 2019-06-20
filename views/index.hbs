@@ -1,9 +1,49 @@
 <section id="home">
 	<img class="header-logo" src="/images/trainsmart.png">
   	<h2>Harnessing AI to 
-deliver <bold>efficient</bold>, <bold>safe</bold> and <bold>effective</bold> fitness training</h2>
+deliver <strong>efficient</strong>, <strong>safe</strong> and <strong>effective</strong> fitness training</h2>
 	<img class="main_image" src="/images/3phone.png">
 </section>
 <section id="news">
 	<h1>Product <g>Features</g> </h1>
+	<video id="videoBox" control preload="auto">
+            <source src="images/promo.mp4"/>
+    </video>
 </section>
+<script type="text/javascript">
+	$.fn.isOnScreen = function(){
+
+    var win = $(window);
+
+    var viewport = {
+        top : win.scrollTop(),
+        left : win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+};
+	jQuery(window).load(function(){$('#videoBox').hover(function(){
+      $('#videoBox').get(0).play();
+      
+	}); });
+$(function(){
+	
+
+    
+    $('section').hover(function(){
+
+	$('#videoBox').get(0).pause();    	
+	console.log('pause');
+
+});
+  
+});
+	
+</script>
