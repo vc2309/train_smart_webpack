@@ -4,13 +4,84 @@
 deliver <strong>efficient</strong>, <strong>safe</strong> and <strong>effective</strong> fitness training</h2>
 	<img class="main_image" src="/images/3phone.png">
 </section>
-<section id="news">
-	<h1>Product <g>Features</g> </h1>
+<section id="about" class="content-section">
+	<div class="content">
+		<h1>What is <strong>Train</strong><g>Smart</g>?</h1>
+		<p>The 21st century has seen a major rise in technology-enhanced fitness. However, users require <strong>personalized training</strong> and <strong>expert supervision</strong>. Introducing <strong>Train</strong><g>Smart</g>, an AI-powered system which emulates a fitness trainer. <strong>Train</strong><g>Smart</g> aims to make safe and effective fitness training accessible to all, without the hefty costs attached.</p>
 	<video id="videoBox" controls preload="auto">
             <source src="images/promo_low.mp4"/>
     </video>
+	</div>
+	
     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/jylmD2Ae0vs?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+
 </section>
+
+
+<section id="features" class="content-section">
+
+	<div class="content">
+		<h1><strong>Product</strong><g>Features</g></h1>
+		<div class="feature-div">
+			<img class="feature" src="images/bc1.png"><img class="feature" src="images/bc0.png">
+			<h2>Real-Time Repetition Validation</h2>
+			<p><strong>Train</strong><g>Smart</g>'s algorithms ensure that each movement is performed to achieve maximal muscle activation. This means that a repetition which fails to meet the correct form, range of motion, or time under tension requirements will not be validated.</p>
+			<hr>
+		</div>
+		<div class="feature-div">
+			<img class="feature" src="images/slouch.png"><img class="feature" src="images/elbow.png">
+			<h2>Real-Time Error Detection</h2>
+			<p>Research into harmful physiological postures and incorrect form is integrated into <strong>Train</strong><g>Smart</g>'s algorithms. Any such unsafe posture or form is identified in real-time, and the user is immediately alerted in order to avoid injuries and ineffective workouts.</p>
+			<hr>
+		</div>
+		<div class="feature-div">
+			<img class="feature" src="images/conf.png"><img class="feature" src="images/feedbac.png"><img class="feature" src="images/stats.png">
+			<h2>Customized Workouts and Progress Analysis</h2>
+			<p><strong>Train</strong><g>Smart</g> allows users to personalize their fitness regimens and perform workouts suited to them. Users are given feedback on each workout they perform, as well as longer-term analysis on their progress in strength, performance, and other workout statistics.</p>
+			<hr>
+		</div>
+		<div class="feature-div">
+			<img class="feature" src="images/phonestand.png" style="width: 20%">
+			<h2>Mechanised Mount</h2>
+			<p>The mechanised phone stand allows users to move around freely, as it provides automated calibration and panning to keep the user in the system's frame at all times.</p>
+			<hr>
+		</div>
+	</div>
+	
+</section>
+
+<section id="contact" class="content-section">
+	<div class="content">
+		<h1><strong>Link</strong><g>Up</g></h1>
+		<p>The <strong>Train</strong><g>Smart</g> team can be reached through LinkedIn or email</p>
+		<ul style="list-style: none;">
+		<li><h2><strong>Vishnu</strong> <g>Chopra</g></h2> <button><a href="https://www.linkedin.com/in/vishnu-chopra/"><img href="https://www.linkedin.com/in/vishnu-chopra/" src="images/linkedin.png"></a></button> <button><a href="mailto:vishnu.chopra2309@gmail.com?Subject=TrainSmart"><img src="images/email.png"></a></button></li>
+		<li><h2><strong>Yash</strong> <g>Nevatia</g></h2> <button><a href="https://www.linkedin.com/in/vishnu-chopra/"><img href="https://www.linkedin.com/in/yashvardhan-nevatia-626071141/" src="images/linkedin.png"></a></button> <button><a href="mailto:yash1997@connect.hku.hk?Subject=TrainSmart"><img src="images/email.png"></a></button></li>
+		</ul>
+	</div>
+	
+</section>
+    <!-- Map Section -->
+    <!-- <div id="map"></div> -->
+
+    <!-- Footer -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
 <script type="text/javascript">
 	$.fn.isOnScreen = function(){
 
@@ -45,6 +116,19 @@ $(function(){
 
 });
   
+$('a').click(function() {
+	var segs = this.id.split('_');
+	var new_id = '#'+segs[segs.length-1];
+	$('.active').removeClass('active');
+	console.log('a_'+segs[segs.length-1]);
+	$('#a_'+segs[segs.length-1]).addClass('active');
+    $('html, body').animate({
+        scrollTop: $(new_id).offset().top
+    }, 1000);
+
+});
+
+
 });
 	
 </script>

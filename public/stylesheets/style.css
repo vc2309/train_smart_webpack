@@ -54,7 +54,7 @@ a {
 }
 
 h1, h2{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Cairo', sans-serif;
 
 }
 
@@ -78,7 +78,7 @@ bold {
 }
 
 section {
-	height: -webkit-fill-available;
+	/*height: -webkit-fill-available;*/
 	padding: 4%;
 }
 
@@ -119,3 +119,52 @@ video {
 	width: 70%;
 }
 
+.content p{
+	text-align: center;
+	font-family: Cairo;
+	font-size: 1.5em;
+	padding: 1.5em;
+}
+
+.feature-div {
+	border-color: black;
+}
+
+.feature-div > h2 {
+	font-size: 2em;
+	font-family: 'Raleway';
+}
+
+img.feature {
+	width: 35%;
+	display: inline-block;
+
+}
+
+.content-section {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5px;
+	/*margin-bottom: 5%;*/
+}
+
+hr {
+	margin-bottom: 5%;
+}
+
+button {
+	background-color: transparent;
+	/*height: 100px;
+	width: 300px;*/
+	text-align: center;
+	font-size: 1.5em;
+	font-family: 'Righteous';
+	padding: 10px;
+	padding-bottom: 6px;
+	border-radius:20px;
+	border-color: #4CAF50;
+}
+
+a > img {
+	width: 30px;
+}
